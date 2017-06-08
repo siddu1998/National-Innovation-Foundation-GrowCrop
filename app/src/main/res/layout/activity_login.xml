@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/triangle"
+    tools:context="com.farm.sristi.ssis17.LoginActivity">
+
+
+    <Button
+        android:id="@+id/newUser"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New User"
+        android:textColor="#ff0000"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="11dp" />
+
+
+    <Button
+        android:textColor="#fff"
+        android:id="@+id/loginBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbutton"
+        android:text="Login"
+        android:layout_marginBottom="22dp"
+        android:layout_above="@+id/forgotPassword"
+        android:layout_toLeftOf="@+id/newUser"
+        android:layout_toStartOf="@+id/newUser" />
+
+    <EditText
+        android:id="@+id/loginPasswordField"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_outline"
+        android:ems="10"
+        android:hint="Password"
+        android:padding="12dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_below="@+id/loginEmailField"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/loginEmailField"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_outline"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/loginPasswordField"
+        android:layout_alignStart="@+id/loginPasswordField" />
+
+    <TextView
+        android:text="Forgot Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forgotPassword"
+        tools:text="Forgot Password?"
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:layout_above="@+id/newUser"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/wheat"
+        android:layout_marginBottom="36dp"
+        android:layout_above="@+id/loginEmailField"
+        android:layout_alignLeft="@+id/forgotPassword"
+        android:layout_alignStart="@+id/forgotPassword" />
+
+
+</RelativeLayout>
+

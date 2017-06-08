@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.farm.sristi.ssis17.VarietyMainPage">
+
+    <Button
+        android:id="@+id/harvest"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="144dp"
+        android:text="Harvest"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/transplantation"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:text="Transplantation "
+        tools:layout_editor_absoluteX="237dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_above="@+id/flowering"
+        android:layout_alignLeft="@+id/flowering"
+        android:layout_alignStart="@+id/flowering" />
+
+    <Button
+        android:id="@+id/flowering"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Flowering Stage"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="109dp"
+        android:layout_above="@+id/harvest"
+        android:layout_alignLeft="@+id/harvest"
+        android:layout_alignStart="@+id/harvest"
+        android:layout_marginBottom="23dp" />
+
+    <Button
+        android:id="@+id/sowing"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/transplantation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="Sowing" />
+
+</RelativeLayout>

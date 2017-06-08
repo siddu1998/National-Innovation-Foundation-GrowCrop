@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="1700dp"
+        tools:context="com.farm.sristi.ssis17.PostActivityFlowering">
+
+
+        <TextView
+            android:id="@+id/percentageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/percentgeField"
+            android:layout_alignBottom="@+id/percentgeField"
+            android:layout_alignLeft="@+id/problemID_r1"
+            android:layout_alignStart="@+id/problemID_r1"
+            android:text=" Percentage Flowering 1"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <EditText
+
+            android:id="@+id/percentgeField"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/ofSet1"
+            android:layout_marginTop="118dp"
+            android:layout_toLeftOf="@+id/textView11"
+            android:layout_toStartOf="@+id/textView11"
+            android:background="@drawable/input_outline"
+            android:ems="10"
+            android:padding="15dp"
+            android:textColor="#000"
+            android:textColorHint="#000" />
+
+        <TextView
+            android:id="@+id/insectTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/percentageFloweringEdit2"
+            android:padding="15dp"
+            android:text="Insect Occurence 1"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:visibility="visible" />
+
+        <RadioGroup
+
+            android:id="@+id/insectIntensityRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/more"
+            android:layout_alignRight="@+id/more"
+            android:layout_below="@+id/insectTextView"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/insectIntensityLow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="low"
+                android:textColor="#000" />
+
+            <RadioButton
+                android:id="@+id/insectIntensityMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mild" />
+
+            <RadioButton
+                android:id="@+id/insectIntensityHigh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="high" />
+
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/insectPresenceRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/insectIntensityRadioGroup"
+            android:layout_alignEnd="@+id/insectIntensityRadioGroup"
+            android:layout_alignRight="@+id/insectIntensityRadioGroup"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <RadioButton
+                android:id="@+id/insectPresenceYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/insectPresenceNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="No" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/problemID_r1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/insectIntensityRadioGroup"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:text="Intensity of Insect \nDamage 1"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/methodofprep_r1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/insectText2"
+            android:layout_alignStart="@+id/insectText2"
+            android:layout_below="@+id/insectOccurence2radioGroup"
+            android:layout_marginTop="69dp"
+            android:text="Disease Ocuurence 1"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/DiseasePreseneceRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignEnd="@+id/percentageFloweringEdit2"
+            android:layout_alignRight="@+id/percentageFloweringEdit2"
+            android:layout_alignTop="@+id/methodofprep_r1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/DiseasePresenceYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/DiseasePresenceNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="No" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/methodofapp_r1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignLeft="@+id/methodofprep_r1"
+            android:layout_alignStart="@+id/methodofprep_r1"
+            android:layout_below="@+id/methodofprep_r1"
+            android:layout_marginTop="32dp"
+            android:text="Intensity of Disease 1"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <RadioGroup
+
+            android:id="@+id/IntensityOfDiseaseRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/methodofapp_r1"
+            android:layout_alignLeft="@+id/insectOccurence2radioGroup"
+            android:layout_alignStart="@+id/insectOccurence2radioGroup"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/intensityOfDiseaeLow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="low" />
+
+            <RadioButton
+                android:id="@+id/intensityOfDiseaseMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="mild" />
+
+            <RadioButton
+                android:id="@+id/intensityOfDiseaseHigh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="high" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/dosage_r1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView19"
+            android:layout_alignStart="@+id/textView19"
+            android:layout_below="@+id/textView19"
+            android:layout_marginTop="103dp"
+            android:text="*--------Stress Factors---------*"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/precautions_r1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/dosage_r1"
+            android:layout_alignStart="@+id/dosage_r1"
+            android:layout_below="@+id/dosage_r1"
+            android:layout_marginTop="19dp"
+            android:text="Drought"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/doyouwant_r1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/precautions_r1"
+            android:layout_marginTop="19dp"
+            android:text="Weed Occurence"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/WeedRadioGroup"
+            android:layout_marginTop="57dp"
+            android:text="Nutrient Deficiency"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView8"
+            android:layout_alignStart="@+id/textView8"
+            android:layout_below="@+id/textView8"
+            android:layout_marginTop="29dp"
+            android:text="Lodging"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <RadioGroup
+
+            android:id="@+id/DroughtRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/precautions_r1"
+            android:layout_toEndOf="@+id/percentageFloweringText"
+            android:layout_toRightOf="@+id/percentageFloweringText"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/DroughtYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/DroughtNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="No" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/WeedRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/DroughtRadioGroup"
+            android:layout_alignStart="@+id/DroughtRadioGroup"
+            android:layout_alignTop="@+id/doyouwant_r1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/WeedYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/WeedNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="No" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/NutrientsRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/WeedRadioGroup"
+            android:layout_alignStart="@+id/WeedRadioGroup"
+            android:layout_alignTop="@+id/textView8"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/NutrientsYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/NutrientsNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="No" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/LodgingRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/NutrientsRadioGroup"
+            android:layout_alignStart="@+id/NutrientsRadioGroup"
+            android:layout_alignTop="@+id/textView9"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/LodgingYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/LodgingNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="No" />
+        </RadioGroup>
+
+        <ImageButton
+            android:id="@+id/imageSelect"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView9"
+            android:layout_marginTop="22dp"
+            android:adjustViewBounds="true"
+            android:background="#00ffffff"
+            android:scaleType="centerCrop"
+            android:src="@drawable/add_btn" />
+
+
+        <EditText
+            android:id="@+id/titleField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/descField"
+            android:layout_alignStart="@+id/descField"
+            android:layout_below="@+id/imageSelect"
+            android:background="@drawable/input_outline"
+            android:hint="Farmer Name"
+            android:padding="15dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/descField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/titleField"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/input_outline"
+            android:ems="10"
+            android:hint="Farmer Mobile"
+            android:inputType="textMultiLine"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/otherField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/descField"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/input_outline"
+            android:ems="10"
+            android:hint="Other Issues"
+            android:inputType="textMultiLine"
+            android:padding="25dp" />
+
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="#f1aa1c"
+            android:text="Submit Report"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/percentageTextView"
+            android:layout_marginRight="40dp"
+            android:text="%"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/methodofprep_r1"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/methodofprep_r1"
+            android:layout_marginTop="42dp"
+            android:text="Number of Varities"
+            android:textColor="#000"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView14"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/textView23"
+            android:layout_toRightOf="@+id/textView23"
+            android:text="More Than 1 Variety" />
+
+        <TextView
+            android:id="@+id/percentageFloweringText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView14"
+            android:layout_alignStart="@+id/textView14"
+            android:layout_below="@+id/percentgeField"
+            android:layout_marginTop="36dp"
+            android:text="Percentage Flowering 2"
+            android:textSize="18dp"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/percentageFloweringEdit2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignBaseline="@+id/percentageFloweringText"
+            android:layout_alignBottom="@+id/percentageFloweringText"
+            android:layout_alignLeft="@+id/percentgeField"
+            android:layout_alignStart="@+id/percentgeField"
+            android:background="@drawable/input_outline"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/insectText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/problemID_r1"
+            android:layout_alignStart="@+id/problemID_r1"
+            android:layout_below="@+id/problemID_r1"
+            android:layout_marginTop="24dp"
+            android:text="Insect Ocuurence 2"
+            android:textSize="18dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/methodofprep_r1"
+            android:layout_alignStart="@+id/methodofprep_r1"
+            android:layout_below="@+id/insectOccurence2radioGroup"
+            android:layout_marginTop="13dp"
+            android:text="Intensity of Insect\n Damage 2"
+            android:textSize="18dp"
+            android:visibility="invisible" />
+
+        <RadioGroup
+            android:id="@+id/insectOccurence2radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/insectIntensityRadioGroup"
+            android:layout_alignStart="@+id/insectIntensityRadioGroup"
+            android:layout_alignTop="@+id/insectText2"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <RadioButton
+                android:id="@+id/radioButton6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="Yes"
+                android:visibility="invisible" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="No"
+                android:visibility="invisible" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/intensityOfInsect2Radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            android:layout_alignTop="@+id/textView18"
+            android:layout_alignLeft="@+id/insectOccurence2radioGroup"
+            android:layout_alignStart="@+id/insectOccurence2radioGroup">
+
+            <RadioButton
+                android:id="@+id/radioButton9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="low" />
+
+            <RadioButton
+                android:id="@+id/radioButton8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="mild" />
+
+            <RadioButton
+                android:id="@+id/radioButton7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="high" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/methodofapp_r1"
+            android:layout_alignStart="@+id/methodofapp_r1"
+            android:layout_below="@+id/methodofapp_r1"
+            android:layout_marginTop="38dp"
+            android:text="Disease Occurence 2"
+            android:textSize="18dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/precautions_r1"
+            android:layout_alignLeft="@+id/dosage_r1"
+            android:layout_alignStart="@+id/dosage_r1"
+            android:layout_marginBottom="25dp"
+            android:text="Intensity og Disease 2"
+            android:textSize="18dp"
+            android:visibility="invisible" />
+
+        <RadioGroup
+            android:id="@+id/diesaseOccurenceRadioGroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/IntensityOfDiseaseRadioGroup"
+            android:layout_alignStart="@+id/IntensityOfDiseaseRadioGroup"
+            android:layout_alignTop="@+id/textView19"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <RadioButton
+                android:id="@+id/radioButton11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/radioButton10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="No" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/intensityOfDisease2RadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            android:layout_alignBottom="@+id/textView23"
+            android:layout_toRightOf="@+id/methodofapp_r1"
+            android:layout_toEndOf="@+id/methodofapp_r1">
+
+            <RadioButton
+                android:id="@+id/radioButton14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="low" />
+
+            <RadioButton
+                android:id="@+id/radioButton13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="mild" />
+
+            <RadioButton
+                android:id="@+id/radioButton12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="high" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView14"
+            android:layout_alignStart="@+id/textView14"
+            android:layout_below="@+id/textView14"
+            android:layout_marginTop="14dp"
+            android:text="OnSet of Flowering 1"
+            android:textColor="#000" />
+
+        <RadioGroup
+            android:id="@+id/ofSet1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/more"
+            android:layout_alignStart="@+id/more"
+            android:layout_alignTop="@+id/textView16">
+
+            <RadioButton
+                android:id="@+id/radioButton17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="Early" />
+
+            <RadioButton
+                android:id="@+id/radioButton16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Normal" />
+
+            <RadioButton
+                android:id="@+id/radioButton15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Late" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView16"
+            android:layout_alignStart="@+id/textView16"
+            android:layout_below="@+id/ofSet1"
+            android:paddingTop="20dp"
+            android:text="OnSet of Flowering 2"
+            android:visibility="invisible" />
+
+        <RadioGroup
+            android:id="@+id/ofSet2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/insectIntensityRadioGroup"
+            android:layout_alignStart="@+id/insectIntensityRadioGroup"
+            android:layout_below="@+id/ofSet1"
+            android:layout_marginTop="15dp"
+            android:visibility="invisible">
+
+            <RadioButton
+                android:id="@+id/radioButton20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="Early" />
+
+            <RadioButton
+                android:id="@+id/radioButton19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Normal" />
+
+            <RadioButton
+                android:id="@+id/radioButton18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="late" />
+        </RadioGroup>
+
+
+    </RelativeLayout>
+
+</ScrollView>
+

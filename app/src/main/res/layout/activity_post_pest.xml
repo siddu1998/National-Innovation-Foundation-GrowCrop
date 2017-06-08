@@ -1,0 +1,991 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.farm.sristi.ssis17.PostActivityPest">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2000dp"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:id="@+id/RelativeLay1"
+            android:layout_width="match_parent"
+            android:layout_height="2000dp"
+            android:layout_weight="1.13"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/Varietyname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Cropnameedit_r1"
+                android:layout_alignStart="@+id/Cropnameedit_r1"
+                android:layout_below="@+id/Cropnameedit_r1"
+                android:layout_marginTop="20dp"
+                android:text="Name of the Variety:"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/submitBtn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/precautions_edit_r1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="37dp"
+                android:background="#e1a500"
+                android:text="Submit Report"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+            <ImageButton
+                android:id="@+id/imageSelect1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/Symptoms"
+                android:adjustViewBounds="true"
+                android:background="#00ffffff"
+                android:scaleType="centerCrop"
+                android:src="@drawable/add_btn" />
+
+            <EditText
+                android:id="@+id/Varietynameedit_r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Varietyname"
+                android:layout_alignStart="@+id/Varietyname"
+                android:layout_below="@+id/Varietyname"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/Cropnameedit_r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Cropname"
+                android:layout_alignStart="@+id/Cropname"
+                android:layout_below="@+id/Cropname"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/Cropname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Nursing_CB_r1"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/Nursing_CB_r1"
+                android:layout_marginTop="14dp"
+                android:text="Crop Name"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignLeft="@+id/Varietyname"
+                android:layout_alignStart="@+id/Varietyname"
+                android:layout_below="@+id/Varietynameedit_r1"
+                android:layout_marginTop="24dp"
+                android:text="Identification of Problem:"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                android:visibility="visible" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupID_r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="11dp"
+                android:visibility="visible">
+
+                <RadioButton
+                    android:id="@+id/RBInsect_r1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="Insect-Pest"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/RBDisease_r1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Disease"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/RBNutrient_r1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nutrient Deficieny"
+                    android:textSize="16dp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/NameofPest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView"
+                android:layout_alignStart="@+id/textView"
+                android:layout_below="@+id/Symptoms"
+                android:layout_marginTop="163dp"
+                android:text="Name of the Pest"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/Local_r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/Local"
+                android:layout_toEndOf="@+id/textView5"
+                android:layout_toRightOf="@+id/textView5"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/English_r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignLeft="@+id/Local_r1"
+                android:layout_alignStart="@+id/Local_r1"
+                android:layout_below="@+id/Local_r1"
+                android:layout_marginTop="13dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/Local"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/NameofPest"
+                android:layout_marginLeft="13dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="11dp"
+                android:text="Local"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18dp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/English"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Local"
+                android:layout_alignStart="@+id/Local"
+                android:layout_alignTop="@+id/English_r1"
+                android:layout_marginTop="10dp"
+                android:text="English"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18dp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/Symptoms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/maturity_CB_r1"
+                android:layout_alignStart="@+id/maturity_CB_r1"
+                android:layout_below="@+id/maturity_CB_r1"
+                android:layout_marginTop="26dp"
+                android:text="Symptoms of the Disease:"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/ExtentTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/sourceofmaterial_edit_r1"
+                android:layout_alignStart="@+id/sourceofmaterial_edit_r1"
+                android:layout_below="@+id/English_r1"
+                android:layout_marginTop="23dp"
+                android:text="Extent of Damage"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                android:visibility="visible" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup_extent_r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/methodofprep_edit_r1"
+                android:layout_alignStart="@+id/methodofprep_edit_r1"
+                android:layout_below="@+id/ExtentTV"
+                android:layout_marginTop="7dp"
+                android:visibility="visible">
+
+                <RadioButton
+                    android:id="@+id/RB1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="Not Severe" />
+
+                <RadioButton
+                    android:id="@+id/RB2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Severe" />
+
+                <RadioButton
+                    android:id="@+id/RB3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Very Severe" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Solution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView7"
+                android:layout_marginTop="65dp"
+                android:text="SOLUTION EMPLOYED"
+                android:textColor="#FFFF4444"
+                android:textSize="20dp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/x"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/SourceofSolution"
+                android:layout_alignStart="@+id/SourceofSolution"
+                android:layout_below="@+id/Solution"
+                android:layout_marginTop="24dp"
+                android:text="Name of the material"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/nameofmaterial_edit_r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignLeft="@+id/x"
+                android:layout_alignStart="@+id/x"
+                android:layout_below="@+id/x"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/SourceofSolution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/PhonologicalState"
+                android:layout_alignStart="@+id/PhonologicalState"
+                android:layout_below="@+id/nameofmaterial_edit_r1"
+                android:text="Source of the material"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/sourceofmaterial_edit_r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/textView3"
+                android:layout_alignRight="@+id/textView3"
+                android:layout_below="@+id/nameofmaterial_edit_r1"
+                android:layout_marginTop="21dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/PhonologicalState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView4"
+                android:layout_alignStart="@+id/textView4"
+                android:layout_below="@+id/sourceofmaterial_edit_r1"
+                android:layout_marginTop="32dp"
+                android:text="Stage of the plant used"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/stageofplant_edit_r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/PhonologicalState"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView6"
+                android:layout_alignStart="@+id/textView6"
+                android:layout_below="@+id/stageofplant_edit_r1"
+                android:layout_marginTop="13dp"
+                android:text="Method of Preparation"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/methodofprep_edit_r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/precautions_edit_r1"
+                android:layout_alignStart="@+id/precautions_edit_r1"
+                android:layout_below="@+id/textView3"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/textView3"
+                android:layout_alignRight="@+id/textView3"
+                android:layout_below="@+id/methodofprep_edit_r1"
+                android:layout_marginTop="16dp"
+                android:text="Method of Application"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/methodofapp_edit_r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/textView2"
+                android:layout_alignRight="@+id/textView2"
+                android:layout_below="@+id/textView4"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView6"
+                android:layout_alignStart="@+id/textView6"
+                android:layout_below="@+id/methodofapp_edit_r1"
+                android:text="Dosage(in litres)"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/dosage_edit_r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView5"
+                android:layout_alignStart="@+id/textView5"
+                android:layout_below="@+id/textView5"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/precautions_edit_r1"
+                android:layout_alignStart="@+id/precautions_edit_r1"
+                android:layout_below="@+id/dosage_edit_r1"
+                android:layout_marginTop="11dp"
+                android:text="Precautions (if any)"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/precautions_edit_r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/English"
+                android:layout_alignStart="@+id/English"
+                android:layout_below="@+id/textView6"
+                android:layout_marginTop="21dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/radioGroupID_r1"
+                android:layout_marginTop="21dp"
+                android:text="Stage of Occurence"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+
+            <CheckBox
+                android:id="@+id/Nursing_CB_r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Local"
+                android:layout_alignStart="@+id/Local"
+                android:layout_below="@+id/textView"
+                android:layout_marginTop="13dp"
+                android:text="Nursing" />
+
+            <CheckBox
+                android:id="@+id/Vegetative_CB_r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Nursing_CB_r1"
+                android:layout_alignStart="@+id/Nursing_CB_r1"
+                android:layout_below="@+id/Nursing_CB_r1"
+                android:layout_marginTop="12dp"
+                android:text="Vegetative Growth" />
+
+            <CheckBox
+                android:id="@+id/Flower_CB_r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Vegetative_CB_r1"
+                android:layout_alignStart="@+id/Vegetative_CB_r1"
+                android:layout_below="@+id/Vegetative_CB_r1"
+                android:layout_marginTop="13dp"
+                android:text="Flower Initiation" />
+
+            <CheckBox
+                android:id="@+id/Fruiting_CB_r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/radioGroup_extent_r1"
+                android:layout_alignStart="@+id/radioGroup_extent_r1"
+                android:layout_below="@+id/Flower_CB_r1"
+                android:layout_marginTop="12dp"
+                android:text="Fruiting" />
+
+            <CheckBox
+                android:id="@+id/maturity_CB_r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Fruiting_CB_r1"
+                android:layout_alignStart="@+id/Fruiting_CB_r1"
+                android:layout_below="@+id/Fruiting_CB_r1"
+                android:layout_marginTop="13dp"
+                android:text="Maturity/Harvesting" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_below="@+id/radioGroup_extent_r1"
+                android:layout_marginTop="15dp"
+                android:text="Do you want a solution for this problem?"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/yes_r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/radioGroup_extent_r1"
+                android:layout_alignRight="@+id/radioGroup_extent_r1"
+                android:layout_below="@+id/textView7"
+                android:text="YES" />
+
+            <Button
+                android:id="@+id/no_r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView7"
+                android:layout_toEndOf="@+id/dosage_edit_r1"
+                android:layout_toRightOf="@+id/dosage_edit_r1"
+                android:text="NO" />
+
+            <Button
+                android:id="@+id/Addproblem_r1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/textView6"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/textView6"
+                android:text="Add Another Problem" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLay2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/imageSelect2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView10"
+                android:adjustViewBounds="true"
+                android:background="#00ffffff"
+                android:scaleType="centerCrop"
+                android:src="@drawable/add_btn" />
+
+            <Button
+                android:id="@+id/submitBtn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="#e1a500"
+                android:text="Submit Report"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="57dp"
+                android:text="Identification of the Problem"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupID_r2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignEnd="@+id/textView14"
+                android:layout_alignRight="@+id/textView14"
+                android:layout_below="@+id/textView8"
+                android:layout_marginTop="28dp">
+
+                <RadioButton
+                    android:id="@+id/RBInsect_r2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="InsectPest" />
+
+                <RadioButton
+                    android:id="@+id/RBDisease_r2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Disease" />
+
+                <RadioButton
+                    android:id="@+id/RBNutrient_r2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nutrient Deficieny" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/radioGroupID_r2"
+                android:layout_marginTop="32dp"
+                android:text="Stage of Occurence"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+
+            <CheckBox
+                android:id="@+id/nursing_CB_r2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView8"
+                android:layout_alignStart="@+id/textView8"
+                android:layout_below="@+id/textView9"
+                android:layout_marginTop="11dp"
+                android:text="Nursing" />
+
+            <CheckBox
+                android:id="@+id/vegetative_CB_r2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/nursing_CB_r2"
+                android:layout_alignStart="@+id/nursing_CB_r2"
+                android:layout_below="@+id/nursing_CB_r2"
+                android:text="Vegetative Growth" />
+
+            <CheckBox
+                android:id="@+id/flower_CB_r2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/vegetative_CB_r2"
+                android:layout_alignStart="@+id/vegetative_CB_r2"
+                android:layout_below="@+id/vegetative_CB_r2"
+                android:text="Flower Initiation" />
+
+            <CheckBox
+                android:id="@+id/fruiting_CB_r2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/flower_CB_r2"
+                android:text="Fruiting" />
+
+            <CheckBox
+                android:id="@+id/maturity_CB_r2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/fruiting_CB_r2"
+                android:layout_alignStart="@+id/fruiting_CB_r2"
+                android:layout_below="@+id/fruiting_CB_r2"
+                android:text="Maturity/Harvest" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/maturity_CB_r2"
+                android:layout_alignStart="@+id/maturity_CB_r2"
+                android:layout_below="@+id/maturity_CB_r2"
+                android:layout_marginTop="17dp"
+                android:text="Symptoms of the Problem"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/textView10"
+                android:layout_marginTop="147dp"
+                android:text="Name of the Pest"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView10"
+                android:layout_alignStart="@+id/textView10"
+                android:layout_below="@+id/textView11"
+                android:layout_marginTop="17dp"
+                android:text="Local"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView12"
+                android:layout_alignStart="@+id/textView12"
+                android:layout_below="@+id/textView12"
+                android:layout_marginTop="14dp"
+                android:text="English"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/Local_r2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/textView11"
+                android:layout_toEndOf="@+id/maturity_CB_r2"
+                android:layout_toRightOf="@+id/maturity_CB_r2"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/English_r2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Local_r2"
+                android:layout_alignStart="@+id/Local_r2"
+                android:layout_below="@+id/textView12"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/flower_CB_r2"
+                android:layout_alignStart="@+id/flower_CB_r2"
+                android:layout_below="@+id/English_r2"
+                android:layout_marginTop="21dp"
+                android:text="Extent of Damage"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+
+            <RadioGroup
+                android:id="@+id/extentradioG_r2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView13"
+                android:layout_alignStart="@+id/textView13"
+                android:layout_below="@+id/textView14"
+                android:layout_marginTop="19dp">
+
+                <RadioButton
+                    android:id="@+id/mild_r2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Mild" />
+
+                <RadioButton
+                    android:id="@+id/severe_r2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Severe" />
+
+                <RadioButton
+                    android:id="@+id/verysevere_r2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Very Severe" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView14"
+                android:layout_alignStart="@+id/textView14"
+                android:layout_below="@+id/extentradioG_r2"
+                android:layout_marginTop="23dp"
+                android:text="Do you want a solution for this problem?"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/extentradioG_r2"
+                android:layout_alignRight="@+id/extentradioG_r2"
+                android:layout_below="@+id/textView15"
+                android:text="YES" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignEnd="@+id/textView8"
+                android:layout_alignRight="@+id/textView8"
+                android:layout_below="@+id/textView15"
+                android:text="NO" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/extentradioG_r2"
+                android:layout_alignStart="@+id/extentradioG_r2"
+                android:layout_below="@+id/button4"
+                android:layout_marginTop="18dp"
+                android:text="SOLUTION EMPLOYED"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/dosage_r2"
+                android:layout_alignRight="@+id/dosage_r2"
+                android:layout_below="@+id/textView16"
+                android:layout_marginTop="41dp"
+                android:text="Name of the material used"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/nameofmaterial_r2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView16"
+                android:layout_alignStart="@+id/textView16"
+                android:layout_below="@+id/textView17"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/nameofmaterial_r2"
+                android:layout_alignStart="@+id/nameofmaterial_r2"
+                android:layout_below="@+id/nameofmaterial_r2"
+                android:layout_marginTop="22dp"
+                android:text="Source of the material used"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/sourceofmaterial_r2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView19"
+                android:layout_alignStart="@+id/textView19"
+                android:layout_below="@+id/textView19"
+                android:layout_marginTop="21dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/textView21"
+                android:layout_alignRight="@+id/textView21"
+                android:layout_below="@+id/sourceofmaterial_r2"
+                android:layout_marginTop="31dp"
+                android:text="Stage of the plant used"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/stageoftheplant_r2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/sourceofmaterial_r2"
+                android:layout_alignStart="@+id/sourceofmaterial_r2"
+                android:layout_below="@+id/textView20"
+                android:layout_marginTop="25dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/stageoftheplant_r2"
+                android:layout_marginTop="33dp"
+                android:text="Method of Preparation"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/methodofprep_r2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView9"
+                android:layout_alignStart="@+id/textView9"
+                android:layout_below="@+id/textView21"
+                android:layout_marginTop="17dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/methodofprep_r2"
+                android:layout_alignStart="@+id/methodofprep_r2"
+                android:layout_below="@+id/methodofprep_r2"
+                android:layout_marginTop="34dp"
+                android:text="Method of Application"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/methodofapp_r2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/textView22"
+                android:layout_marginTop="21dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/textView24"
+                android:layout_alignRight="@+id/textView24"
+                android:layout_below="@+id/methodofapp_r2"
+                android:layout_marginTop="28dp"
+                android:text="Dosage(in litres)"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/dosage_r2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/textView23"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/dosage_r2"
+                android:layout_marginTop="28dp"
+                android:text="Precautions(if any)"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/precautions_r2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView22"
+                android:layout_alignStart="@+id/textView22"
+                android:layout_below="@+id/textView24"
+                android:layout_marginTop="25dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

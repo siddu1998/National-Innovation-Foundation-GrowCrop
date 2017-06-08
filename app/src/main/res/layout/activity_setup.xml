@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.farm.sristi.ssis17.SetupActivity">
+    <ImageButton
+        android:layout_width="100dp"
+        android:id="@+id/setupImageBtn"
+        android:src="@drawable/default_image"
+        android:background="#00ffffff"
+        android:scaleType="centerCrop"
+
+        android:layout_marginTop="16dp"
+        android:layout_height="100dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done!"
+        android:id="@+id/setupSubmitBtn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_alignParentBottom="true"
+         />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:padding="16dp"
+        android:background="#e7e6deb5"
+        android:id="@+id/setupNameField"
+        android:hint="Enter Your Display Name"
+        android:layout_alignTop="@+id/setupImageBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="121dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:ems="10"
+        android:padding="16dp"
+        android:background="#e7e6deb5"
+        android:id="@+id/setupMobileField"
+        android:hint="Mobile Number"
+        android:layout_below="@id/setupNameField"/>
+
+</RelativeLayout>

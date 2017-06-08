@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/triangle"
+    android:layout_height="match_parent"
+
+    tools:context="com.farm.sristi.ssis17.MasterMainPage">
+
+    <Button
+        android:id="@+id/fieldVariety"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbutton"
+        android:text="Crop Trail Data"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/pest"
+        android:layout_alignStart="@+id/pest"
+        android:layout_marginTop="35dp" />
+
+    <Button
+        android:id="@+id/pest"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fieldVariety"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roundbutton"
+        android:text="Pest Control"
+
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/record"
+        android:layout_width="200dp"
+
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        android:background="@drawable/roundbutton"
+        android:text="Kisan Ki Awaz"
+        android:layout_below="@+id/pest"
+        android:layout_alignLeft="@+id/pest"
+        android:layout_alignStart="@+id/pest" />
+
+    <ImageButton
+        android:id="@+id/kissanHelpLine"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="#00ffffff"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/call"
+        android:layout_below="@+id/imageView8"
+        android:layout_alignLeft="@+id/imageView8"
+        android:layout_alignStart="@+id/imageView8" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@android:drawable/presence_audio_online"
+        android:layout_alignTop="@+id/record"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp" />
+
+    <Button
+        android:id="@+id/solutions"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbutton"
+        android:text="Solutions"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/record"
+        android:layout_alignStart="@+id/record" />
+
+    <ImageView
+        android:id="@+id/ladyBug"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/record"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2"
+        app:srcCompat="@drawable/ladybug" />
+
+    <ImageView
+        android:id="@+id/sunflower"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/ladyBug"
+        android:layout_alignStart="@+id/ladyBug"
+        android:layout_alignTop="@+id/fieldVariety"
+        app:srcCompat="@drawable/sunflower" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/idea"
+        android:layout_alignTop="@+id/solutions"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2" />
+
+    <Button
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/solutions"
+        android:layout_alignStart="@+id/solutions"
+        android:layout_alignTop="@+id/kissanHelpLine"
+        android:background="@drawable/roundbutton"
+        android:text="Kisan Help Line"
+        android:textColor="#fff" />
+
+</RelativeLayout>

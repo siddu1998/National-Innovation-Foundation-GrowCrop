@@ -1,0 +1,3037 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.farm.sristi.ssis17.PostActivityHarvesting">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="3000dp">
+
+        <RelativeLayout
+            android:id="@+id/RelLay1"
+            android:layout_width="match_parent"
+            android:layout_height="2000dp"
+            android:visibility="visible">
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:text="Variety 1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25dp" />
+
+
+            <Button
+                android:id="@+id/plant1_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="13dp"
+                android:text="Plant 1" />
+
+            <Button
+                android:id="@+id/plant2_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/plant1_button"
+                android:layout_toEndOf="@+id/plant1_button"
+                android:layout_toRightOf="@+id/plant1_button"
+                android:text="Plant 2" />
+
+            <Button
+                android:id="@+id/plant3_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/plant2_button"
+                android:layout_toEndOf="@+id/plant2_button"
+                android:layout_toRightOf="@+id/plant2_button"
+                android:text="Plant 3" />
+
+            <Button
+                android:id="@+id/plant4_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/plant3_button"
+                android:layout_toEndOf="@+id/plant3_button"
+                android:layout_toRightOf="@+id/plant3_button"
+                android:text="Plant 4" />
+
+            <Button
+                android:id="@+id/plant5_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/plant1_button"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@+id/textView2"
+                android:layout_toStartOf="@+id/textView2"
+                android:text="Plant 5" />
+
+            <Button
+                android:id="@+id/plant6_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/textView2"
+                android:layout_alignRight="@+id/textView2"
+                android:layout_below="@+id/plant2_button"
+                android:layout_marginEnd="19dp"
+                android:layout_marginRight="19dp"
+                android:text="Plant 6" />
+
+            <Button
+                android:id="@+id/plant7_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/plant3_button"
+                android:layout_toEndOf="@+id/plant6_button"
+                android:layout_toRightOf="@+id/plant6_button"
+                android:text="Plant 7" />
+
+            <Button
+                android:id="@+id/plant8_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/plant5_button"
+                android:layout_toLeftOf="@+id/plant3_button"
+                android:layout_toStartOf="@+id/plant3_button"
+                android:text="Plant 8" />
+
+            <Button
+                android:id="@+id/plant9_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/plant6_button"
+                android:layout_marginLeft="17dp"
+                android:layout_marginStart="17dp"
+                android:layout_toEndOf="@+id/plant8_button"
+                android:layout_toRightOf="@+id/plant8_button"
+                android:text="Plant 9" />
+
+            <Button
+                android:id="@+id/plant10_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/plant8_button"
+                android:layout_toEndOf="@+id/plant5_button"
+                android:layout_toRightOf="@+id/plant5_button"
+                android:text="Plant 10" />
+
+
+            <RelativeLayout
+                android:id="@+id/RelLay_plant1"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/plant10_button">
+
+
+                <EditText
+                    android:id="@+id/length_spikes_plant1_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignBaseline="@+id/lengthofspikesedit"
+                    android:layout_alignBottom="@+id/lengthofspikesedit"
+                    android:layout_alignLeft="@+id/noofbranches_plant1_v1"
+                    android:layout_alignStart="@+id/noofbranches_plant1_v1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/grainsperspike_plant1_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/noofspikes_plant1_v1"
+                    android:layout_alignBottom="@+id/noofspikes_plant1_v1"
+                    android:layout_alignLeft="@+id/grainsperspike"
+                    android:layout_alignStart="@+id/grainsperspike"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/noofspikes_plant1_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/noofspikes"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/noofbranches_plant1_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/noofspikes"
+                    android:layout_alignLeft="@+id/nooftillers"
+
+                    android:layout_alignStart="@+id/nooftillers"
+                    android:layout_alignTop="@+id/plant1_height_v1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/plant1_height_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plantheight1"
+                    android:layout_marginTop="15dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/lengthofspikesedit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/noofspikes_plant1_v1"
+                    android:layout_marginTop="13dp"
+                    android:text="Length of Spikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/grainsperspike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/noofspikes"
+                    android:layout_alignBottom="@+id/noofspikes"
+                    android:layout_alignEnd="@+id/nooftillers"
+                    android:layout_alignRight="@+id/nooftillers"
+                    android:text="Grains per Spike"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/noofspikes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plant1_height_v1"
+                    android:layout_marginTop="10dp"
+                    android:text="No. of Spikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/nooftillers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/plantheight1"
+                    android:layout_alignBottom="@+id/plantheight1"
+                    android:layout_marginLeft="37dp"
+                    android:layout_marginStart="37dp"
+                    android:layout_toEndOf="@+id/lengthofspikesedit"
+                    android:layout_toRightOf="@+id/lengthofspikesedit"
+                    android:text="No. of Tillers"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/plantheight1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="15dp"
+                    android:text="Plant Height"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelLay_plant2"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/plant10_button"
+                android:layout_marginTop="13dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/lospikes2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/noofspikes_plant2_v1"
+                    android:layout_marginTop="13dp"
+                    android:text="LengthofSpikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/grainsperspike_plant2_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/noofspikes_plant2_v1"
+                    android:layout_alignBottom="@+id/noofspikes_plant2_v1"
+                    android:layout_alignLeft="@+id/noofbranches_plant2_v1"
+                    android:layout_alignStart="@+id/noofbranches_plant2_v1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/grainsps2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/nos2"
+                    android:layout_alignBottom="@+id/nos2"
+                    android:layout_alignEnd="@+id/tillers2"
+                    android:layout_alignRight="@+id/tillers2"
+                    android:text="Grains per Spike"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/noofbranches_plant2_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/plant2_height_v1"
+                    android:layout_alignBottom="@+id/plant2_height_v1"
+                    android:layout_alignLeft="@+id/tillers2"
+                    android:layout_alignStart="@+id/tillers2"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/plant2_height_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plantheight2"
+                    android:layout_marginTop="12dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/tillers2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="45dp"
+                    android:layout_marginRight="45dp"
+                    android:text="No. of Tillers"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/plantheight2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plant Height"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/noofspikes_plant2_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/nos2"
+                    android:layout_marginTop="14dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/nos2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plant2_height_v1"
+                    android:layout_marginTop="14dp"
+                    android:text="No. of Spikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/length_spikes_plant2_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/lospikes2"
+                    android:layout_marginTop="11dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/RelLay_plant3"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/plant10_button"
+                android:layout_marginTop="11dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/lospikes3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/noofspikes_plant3_v1"
+                    android:layout_marginTop="13dp"
+                    android:text="LengthofSpikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/grainsperspike_plant3_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/noofspikes_plant3_v1"
+                    android:layout_alignBottom="@+id/noofspikes_plant3_v1"
+                    android:layout_alignLeft="@+id/noofbranches_plant3_v1"
+                    android:layout_alignStart="@+id/noofbranches_plant3_v1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/grainsps3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/nos3"
+                    android:layout_alignBottom="@+id/nos3"
+                    android:layout_alignEnd="@+id/Tillers3"
+                    android:layout_alignRight="@+id/Tillers3"
+                    android:text="Grains per Spike"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/noofbranches_plant3_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/plant3_height_v1"
+                    android:layout_alignBottom="@+id/plant3_height_v1"
+                    android:layout_alignLeft="@+id/Tillers3"
+                    android:layout_alignStart="@+id/Tillers3"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/plant3_height_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plantheight3"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/Tillers3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="45dp"
+                    android:layout_marginRight="45dp"
+                    android:text="No. of Tillers"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/plantheight3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plant Height"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/noofspikes_plant3_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/nos3"
+                    android:layout_marginTop="14dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/nos3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plant3_height_v1"
+                    android:layout_marginTop="14dp"
+                    android:text="No. of Spikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/length_spikes_plant3_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/lospikes3"
+                    android:layout_marginTop="11dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/RelLay_plant4"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_below="@+id/plant10_button"
+                android:layout_marginTop="11dp"
+                android:layout_toEndOf="@+id/RelLay_plant2"
+                android:layout_toRightOf="@+id/RelLay_plant2"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/lospikes4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/noofspikes_plant4_v1"
+                    android:layout_marginTop="13dp"
+                    android:text="LengthofSpikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/grainsperspike_plant4_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/noofspikes_plant4_v1"
+                    android:layout_alignBottom="@+id/noofspikes_plant4_v1"
+                    android:layout_alignLeft="@+id/noofbranches_plant4_v1"
+                    android:layout_alignStart="@+id/noofbranches_plant4_v1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/grainsps4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/nos4"
+                    android:layout_alignBottom="@+id/nos4"
+                    android:layout_alignEnd="@+id/tillers4"
+                    android:layout_alignRight="@+id/tillers4"
+                    android:text="Grains per Spike"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/noofbranches_plant4_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/plant4_height_v1"
+                    android:layout_alignBottom="@+id/plant4_height_v1"
+                    android:layout_alignLeft="@+id/tillers4"
+                    android:layout_alignStart="@+id/tillers4"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/plant4_height_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plantheight4"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/tillers4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="45dp"
+                    android:layout_marginRight="45dp"
+                    android:text="No. of Tillers"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/plantheight4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plant Height"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/noofspikes_plant4_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/nos4"
+                    android:layout_marginTop="14dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/nos4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plant4_height_v1"
+                    android:layout_marginTop="14dp"
+                    android:text="No. of Spikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/length_spikes_plant4_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/lospikes4"
+                    android:layout_marginTop="11dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/RelLay_plant5"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/plant10_button"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/lospikes5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/noofspikes_plant5_v1"
+                    android:layout_marginTop="13dp"
+                    android:text="LengthofSpikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/grainsperspike_plant5_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/noofspikes_plant5_v1"
+                    android:layout_alignBottom="@+id/noofspikes_plant5_v1"
+                    android:layout_alignLeft="@+id/noofbranches_plant5_v1"
+                    android:layout_alignStart="@+id/noofbranches_plant5_v1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/grainsps5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/nos5"
+                    android:layout_alignBottom="@+id/nos5"
+                    android:layout_alignEnd="@+id/branches5"
+                    android:layout_alignRight="@+id/branches5"
+                    android:text="Grains per Spike"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/noofbranches_plant5_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/plant5_height_v1"
+                    android:layout_alignBottom="@+id/plant5_height_v1"
+                    android:layout_alignLeft="@+id/branches5"
+                    android:layout_alignStart="@+id/branches5"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/plant5_height_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plantheight5"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/branches5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="45dp"
+                    android:layout_marginRight="45dp"
+                    android:text="No. of Tillers"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/plantheight5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plant Height"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/noofspikes_plant5_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/nos5"
+                    android:layout_marginTop="14dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/nos5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plant5_height_v1"
+                    android:layout_marginTop="14dp"
+                    android:text="No. of Spikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/length_spikes_plant5_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/lospikes5"
+                    android:layout_marginTop="11dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/RelLay_plant6"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_below="@+id/plant10_button"
+                android:layout_marginTop="11dp"
+                android:layout_toEndOf="@+id/RelLay_plant2"
+                android:layout_toRightOf="@+id/RelLay_plant2"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/lospikes6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/noofspikes_plant6_v1"
+                    android:layout_marginTop="13dp"
+                    android:text="LengthofSpikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/grainsperspike_plant6_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/noofspikes_plant6_v1"
+                    android:layout_alignBottom="@+id/noofspikes_plant6_v1"
+                    android:layout_alignLeft="@+id/noofbranches_plant6_v1"
+                    android:layout_alignStart="@+id/noofbranches_plant6_v1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/grainsps6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/nos6"
+                    android:layout_alignBottom="@+id/nos6"
+                    android:layout_alignEnd="@+id/tillers6"
+                    android:layout_alignRight="@+id/tillers6"
+                    android:text="Grains per Spike"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/noofbranches_plant6_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/plant6_height_v1"
+                    android:layout_alignBottom="@+id/plant6_height_v1"
+                    android:layout_alignLeft="@+id/tillers6"
+                    android:layout_alignStart="@+id/tillers6"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/plant6_height_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plantheight6"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/tillers6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="45dp"
+                    android:layout_marginRight="45dp"
+                    android:text="No. of Tillers"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/plantheight6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plant Height"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/noofspikes_plant6_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/nos6"
+                    android:layout_marginTop="14dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/nos6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plant6_height_v1"
+                    android:layout_marginTop="14dp"
+                    android:text="No. of Spikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/length_spikes_plant6_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/lospikes6"
+                    android:layout_marginTop="11dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelLay_plant7"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_below="@+id/plant10_button"
+                android:layout_marginTop="11dp"
+                android:layout_toEndOf="@+id/RelLay_plant2"
+                android:layout_toRightOf="@+id/RelLay_plant2"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/lospikes7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/noofspikes_plant7_v1"
+                    android:layout_marginTop="13dp"
+                    android:text="LengthofSpikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/grainsperspike_plant7_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/noofspikes_plant7_v1"
+                    android:layout_alignBottom="@+id/noofspikes_plant7_v1"
+                    android:layout_alignLeft="@+id/noofbranches_plant7_v1"
+                    android:layout_alignStart="@+id/noofbranches_plant7_v1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/grainsps7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/nos7"
+                    android:layout_alignBottom="@+id/nos7"
+                    android:layout_alignEnd="@+id/branches7"
+                    android:layout_alignRight="@+id/branches7"
+                    android:text="Grains per Spike"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/noofbranches_plant7_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/plant7_height_v1"
+                    android:layout_alignBottom="@+id/plant7_height_v1"
+                    android:layout_alignLeft="@+id/branches7"
+                    android:layout_alignStart="@+id/branches7"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/plant7_height_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plantheight7"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/branches7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="45dp"
+                    android:layout_marginRight="45dp"
+                    android:text="No. of Tillers"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/plantheight7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plant Height"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/noofspikes_plant7_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/nos7"
+                    android:layout_marginTop="14dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/nos7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plant7_height_v1"
+                    android:layout_marginTop="14dp"
+                    android:text="No. of Spikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/length_spikes_plant7_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/lospikes7"
+                    android:layout_marginTop="11dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/RelLay_plant8"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_below="@+id/plant10_button"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/RelLay_plant2"
+                android:layout_toRightOf="@+id/RelLay_plant2"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/lospikes8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/noofspikes_plant8_v1"
+                    android:layout_marginTop="13dp"
+                    android:text="LengthofSpikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/grainsperspike_plant8_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/noofspikes_plant8_v1"
+                    android:layout_alignBottom="@+id/noofspikes_plant8_v1"
+                    android:layout_alignLeft="@+id/noofbranches_plant8_v1"
+                    android:layout_alignStart="@+id/noofbranches_plant8_v1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/grainsps8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/nos8"
+                    android:layout_alignBottom="@+id/nos8"
+                    android:layout_alignEnd="@+id/tillers8"
+                    android:layout_alignRight="@+id/tillers8"
+                    android:text="Grains per Spike"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/noofbranches_plant8_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/plant8_height_v1"
+                    android:layout_alignBottom="@+id/plant8_height_v1"
+                    android:layout_alignLeft="@+id/tillers8"
+                    android:layout_alignStart="@+id/tillers8"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/plant8_height_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plantheight8"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/tillers8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="45dp"
+                    android:layout_marginRight="45dp"
+                    android:text="No. of Tillers"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/plantheight8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plant Height"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/noofspikes_plant8_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/nos8"
+                    android:layout_marginTop="14dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/nos8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plant8_height_v1"
+                    android:layout_marginTop="14dp"
+                    android:text="No. of Spikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/length_spikes_plant8_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/lospikes8"
+                    android:layout_marginTop="11dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/RelLay_plant9"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_below="@+id/plant10_button"
+                android:layout_marginTop="11dp"
+                android:layout_toEndOf="@+id/RelLay_plant2"
+                android:layout_toRightOf="@+id/RelLay_plant2"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/lospikes9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/noofspikes_plant9_v1"
+                    android:layout_marginTop="13dp"
+                    android:text="LengthofSpikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/grainsperspike_plant9_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/noofspikes_plant9_v1"
+                    android:layout_alignBottom="@+id/noofspikes_plant9_v1"
+                    android:layout_alignLeft="@+id/noofbranches_plant9_v1"
+                    android:layout_alignStart="@+id/noofbranches_plant9_v1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/grainsps9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/nos9"
+                    android:layout_alignBottom="@+id/nos9"
+                    android:layout_alignEnd="@+id/tillers9"
+                    android:layout_alignRight="@+id/tillers9"
+                    android:text="Grains per Spike"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/noofbranches_plant9_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/plant9_height_v1"
+                    android:layout_alignBottom="@+id/plant9_height_v1"
+                    android:layout_alignLeft="@+id/tillers9"
+                    android:layout_alignStart="@+id/tillers9"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/plant9_height_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plantheight9"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/tillers9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="45dp"
+                    android:layout_marginRight="45dp"
+                    android:text="No. of Tillers"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/plantheight9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plant Height"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/noofspikes_plant9_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/nos9"
+                    android:layout_marginTop="14dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/nos9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plant9_height_v1"
+                    android:layout_marginTop="14dp"
+                    android:text="No. of Spikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/length_spikes_plant9_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/lospikes9"
+                    android:layout_marginTop="11dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelLay_plant10"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_below="@+id/plant10_button"
+                android:layout_marginTop="11dp"
+                android:layout_toEndOf="@+id/RelLay_plant2"
+                android:layout_toRightOf="@+id/RelLay_plant2"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/lospikes10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/noofspikes_plant10_v1"
+                    android:layout_marginTop="13dp"
+                    android:text="LengthofSpikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/grainsperspike_plant10_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/noofspikes_plant10_v1"
+                    android:layout_alignBottom="@+id/noofspikes_plant10_v1"
+                    android:layout_alignLeft="@+id/noofbranches_plant10_v1"
+                    android:layout_alignStart="@+id/noofbranches_plant10_v1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/grainsps10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/nos10"
+                    android:layout_alignBottom="@+id/nos10"
+                    android:layout_alignEnd="@+id/tillers10"
+                    android:layout_alignRight="@+id/tillers10"
+                    android:text="Grains per Spike"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/noofbranches_plant10_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/plant10_height_v1"
+                    android:layout_alignBottom="@+id/plant10_height_v1"
+                    android:layout_alignLeft="@+id/tillers10"
+                    android:layout_alignStart="@+id/tillers10"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/plant10_height_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plantheight10"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/tillers10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="45dp"
+                    android:layout_marginRight="45dp"
+                    android:text="No. of Tillers"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/plantheight10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plant Height"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/noofspikes_plant10_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/nos10"
+                    android:layout_marginTop="14dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/nos10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plant10_height_v1"
+                    android:layout_marginTop="14dp"
+                    android:text="No. of Spikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/length_spikes_plant10_v1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/lospikes10"
+                    android:layout_marginTop="11dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/yes_v1"
+
+                android:layout_marginTop="15dp"
+                android:text="Performance"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="503dp"
+
+                android:text="Total Yield"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/Yield_v1"
+                android:layout_marginTop="22dp"
+                android:text="Is this variety suitable here?"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/Yield_v1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView4"
+                android:layout_alignBottom="@+id/textView4"
+                android:layout_marginLeft="26dp"
+                android:layout_marginStart="26dp"
+                android:layout_toEndOf="@+id/textView6"
+                android:layout_toRightOf="@+id/textView6"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/yes_v1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/textView4"
+                android:layout_alignRight="@+id/textView4"
+                android:layout_below="@+id/textView7"
+                android:layout_marginTop="11dp"
+                android:text="YES" />
+
+            <Button
+                android:id="@+id/no_v1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/yes_v1"
+                android:layout_toEndOf="@+id/textView6"
+                android:layout_toRightOf="@+id/textView6"
+                android:text="NO" />
+
+            <RadioGroup
+                android:id="@+id/performance_RG_v1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/yes_v1"
+                android:layout_alignStart="@+id/yes_v1"
+                android:layout_below="@+id/textView6"
+                android:layout_marginTop="20dp">
+
+                <RadioButton
+                    android:id="@+id/bad_RB_v1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Bad" />
+
+                <RadioButton
+                    android:id="@+id/good_RB_v1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Good" />
+
+                <RadioButton
+                    android:id="@+id/verygood_RB_v1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Very Good" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/variety2_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/performance_RG_v1"
+                android:layout_alignStart="@+id/performance_RG_v1"
+                android:layout_below="@+id/performance_RG_v1"
+                android:layout_marginLeft="37dp"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="17dp"
+                android:text="Variety 2" />
+
+            <Button
+                android:id="@+id/done_v1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/variety2_button"
+                android:layout_alignBottom="@+id/variety2_button"
+                android:layout_alignEnd="@+id/Yield_v1"
+                android:layout_alignRight="@+id/Yield_v1"
+                android:text="Done" />
+
+
+        </RelativeLayout>
+
+
+        //Variety2
+
+        <RelativeLayout
+            android:id="@+id/RelLay2"
+            android:layout_width="wrap_content"
+            android:layout_height="2000dp"
+
+            android:layout_marginBottom="23dp"
+            android:visibility="gone">
+
+
+            <TextView
+                android:id="@+id/variety2_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+
+                android:text="Variety 2"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25dp" />
+
+
+            <Button
+                android:id="@+id/plant1_button_v2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/variety2_textview"
+                android:layout_marginTop="13dp"
+                android:text="Plant 1" />
+
+            <Button
+                android:id="@+id/plant2_button_v2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/plant1_button_v2"
+                android:layout_toEndOf="@+id/plant1_button_v2"
+                android:layout_toRightOf="@+id/plant1_button_v2"
+                android:text="Plant 2" />
+
+            <Button
+                android:id="@+id/plant3_button_v2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/plant2_button_v2"
+                android:layout_toEndOf="@+id/plant2_button_v2"
+                android:layout_toRightOf="@+id/plant2_button_v2"
+                android:text="Plant 3" />
+
+            <Button
+                android:id="@+id/plant4_button_v2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/plant3_button_v2"
+                android:layout_toEndOf="@+id/plant3_button_v2"
+                android:layout_toRightOf="@+id/plant3_button_v2"
+                android:text="Plant 4" />
+
+            <Button
+                android:id="@+id/plant5_button_v2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/plant1_button_v2"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@+id/variety2_textview"
+                android:layout_toStartOf="@+id/variety2_textview"
+                android:text="Plant 5" />
+
+            <Button
+                android:id="@+id/plant6_button_v2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/variety2_textview"
+                android:layout_alignRight="@+id/variety2_textview"
+                android:layout_below="@+id/plant2_button_v2"
+                android:layout_marginEnd="19dp"
+                android:layout_marginRight="19dp"
+                android:text="Plant 6" />
+
+            <Button
+                android:id="@+id/plant7_button_v2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/plant3_button_v2"
+                android:layout_toEndOf="@+id/plant6_button_v2"
+                android:layout_toRightOf="@+id/plant6_button_v2"
+                android:text="Plant 7" />
+
+            <Button
+                android:id="@+id/plant8_button_v2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/plant5_button_v2"
+                android:layout_toLeftOf="@+id/plant3_button_v2"
+                android:layout_toStartOf="@+id/plant3_button_v2"
+                android:text="Plant 8" />
+
+            <Button
+                android:id="@+id/plant9_button_v2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/plant6_button_v2"
+                android:layout_marginLeft="17dp"
+                android:layout_marginStart="17dp"
+                android:layout_toEndOf="@+id/plant8_button_v2"
+                android:layout_toRightOf="@+id/plant8_button_v2"
+                android:text="Plant 9" />
+
+            <Button
+                android:id="@+id/plant10_button_v2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/plant8_button_v2"
+                android:layout_toEndOf="@+id/plant5_button_v2"
+                android:layout_toRightOf="@+id/plant5_button_v2"
+                android:text="Plant 10" />
+
+
+            <RelativeLayout
+                android:id="@+id/RelLay_plant1_v2"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/plant10_button_v2">
+
+
+                <EditText
+                    android:id="@+id/length_spikes_plant1_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/lengthofspikesedit_v2"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/grainsperspike_plant1_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignBaseline="@+id/noofspikes_plant1_v2"
+                    android:layout_alignBottom="@+id/noofspikes_plant1_v2"
+                    android:layout_alignLeft="@+id/grainsperspike_v2"
+                    android:layout_alignStart="@+id/grainsperspike_v2"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/noofspikes_plant1_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/noofspikes_v2"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/noofbranches_plant1_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_above="@+id/noofspikes_v2"
+                    android:layout_alignLeft="@+id/nooftillers_v2"
+
+                    android:layout_alignStart="@+id/nooftillers_v2"
+                    android:layout_alignTop="@+id/plant1_height_v2"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/plant1_height_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+
+
+                    android:layout_below="@+id/plantheight1_v2"
+                    android:layout_marginTop="15dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/lengthofspikesedit_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/noofspikes_plant1_v2"
+                    android:layout_marginTop="13dp"
+                    android:text="Length of Spikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/grainsperspike_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/noofspikes_v2"
+                    android:layout_alignBottom="@+id/noofspikes_v2"
+                    android:layout_alignEnd="@+id/nooftillers_v2"
+                    android:layout_alignRight="@+id/nooftillers_v2"
+                    android:text="Grains per Spike"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/noofspikes_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plant1_height_v2"
+                    android:layout_marginTop="10dp"
+                    android:text="No. of Spikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/nooftillers_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/plantheight1_v2"
+                    android:layout_alignBottom="@+id/plantheight1_v2"
+                    android:layout_marginLeft="37dp"
+                    android:layout_marginStart="37dp"
+                    android:layout_toEndOf="@+id/lengthofspikesedit_v2"
+                    android:layout_toRightOf="@+id/lengthofspikesedit_v2"
+                    android:text="No. of Tillers"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/plantheight1_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="15dp"
+                    android:text="Plant Height"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelLay_plant2_v2"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/plant10_button_v2"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/lospikes2_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/noofspikes_plant2_v2"
+                    android:layout_marginTop="13dp"
+                    android:text="LengthofSpikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/grainsperspike_plant2_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignBaseline="@+id/noofspikes_plant2_v2"
+                    android:layout_alignBottom="@+id/noofspikes_plant2_v2"
+                    android:layout_alignLeft="@+id/noofbranches_plant2_v2"
+                    android:layout_alignStart="@+id/noofbranches_plant2_v2"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/grainsps2_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/nos2_v2"
+                    android:layout_alignBottom="@+id/nos2_v2"
+                    android:layout_alignEnd="@+id/tillers2_v2"
+                    android:layout_alignRight="@+id/tillers2_v2"
+                    android:text="Grains per Spike"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/noofbranches_plant2_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignBaseline="@+id/plant2_height_v2"
+                    android:layout_alignBottom="@+id/plant2_height_v2"
+                    android:layout_alignLeft="@+id/tillers2_v2"
+                    android:layout_alignStart="@+id/tillers2_v2"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/plant2_height_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plantheight2_v2"
+                    android:layout_marginTop="12dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/tillers2_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="45dp"
+                    android:layout_marginRight="45dp"
+                    android:text="No. of Tillers"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/plantheight2_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plant Height"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/noofspikes_plant2_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/nos2_v2"
+                    android:layout_marginTop="14dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/nos2_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plant2_height_v2"
+                    android:layout_marginTop="14dp"
+                    android:text="No. of Spikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/length_spikes_plant2_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/lospikes2_v2"
+                    android:layout_marginTop="11dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/RelLay_plant3_v2"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_below="@+id/plant10_button_v2"
+                android:layout_marginTop="11dp"
+                android:layout_toEndOf="@+id/RelLay_plant2_v2"
+                android:layout_toRightOf="@+id/RelLay_plant2_v2"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/lospikes3_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/noofspikes3_plant3_v2"
+                    android:layout_marginTop="13dp"
+                    android:text="LengthofSpikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/grainsperspike_plant3_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignBaseline="@+id/noofspikes3_plant3_v2"
+                    android:layout_alignBottom="@+id/noofspikes3_plant3_v2"
+                    android:layout_alignLeft="@+id/noofbranches_plant3_v2"
+                    android:layout_alignStart="@+id/noofbranches_plant3_v2"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/grainsps3_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/nos3_v2"
+                    android:layout_alignBottom="@+id/nos3_v2"
+                    android:layout_alignEnd="@+id/Tillers3_v2"
+                    android:layout_alignRight="@+id/Tillers3_v2"
+                    android:text="Grains per Spike"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/noofbranches_plant3_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignBaseline="@+id/plant3_height_v2"
+                    android:layout_alignBottom="@+id/plant3_height_v2"
+                    android:layout_alignLeft="@+id/Tillers3_v2"
+                    android:layout_alignStart="@+id/Tillers3_v2"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/plant3_height_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plantheight3_v2"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/Tillers3_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="45dp"
+                    android:layout_marginRight="45dp"
+                    android:text="No. of Tillers"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/plantheight3_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plant Height"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/noofspikes3_plant3_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/nos3_v2"
+                    android:layout_marginTop="14dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/nos3_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plant3_height_v2"
+                    android:layout_marginTop="14dp"
+                    android:text="No. of Spikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/length_spikes_plant3_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/lospikes3_v2"
+                    android:layout_marginTop="11dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/RelLay_plant4_v2"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/plant10_button_v2"
+                android:layout_marginTop="13dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/lospikes4_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/noofspikes_plant4_v2"
+                    android:layout_marginTop="13dp"
+                    android:text="LengthofSpikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/grainsperspike_plamt4_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignBaseline="@+id/noofspikes_plant4_v2"
+                    android:layout_alignBottom="@+id/noofspikes_plant4_v2"
+                    android:layout_alignLeft="@+id/noofbranches_plant4_v2"
+                    android:layout_alignStart="@+id/noofbranches_plant4_v2"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/grainsps4_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/nos4_v2"
+                    android:layout_alignBottom="@+id/nos4_v2"
+                    android:layout_alignEnd="@+id/tillers4_v2"
+                    android:layout_alignRight="@+id/tillers4_v2"
+                    android:text="Grains per Spike"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/noofbranches_plant4_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignBaseline="@+id/plant4_height_v2"
+                    android:layout_alignBottom="@+id/plant4_height_v2"
+                    android:layout_alignLeft="@+id/tillers4_v2"
+                    android:layout_alignStart="@+id/tillers4_v2"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/plant4_height_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plantheight4_v2"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/tillers4_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="45dp"
+                    android:layout_marginRight="45dp"
+                    android:text="No. of Tillers"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/plantheight4_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plant Height"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/noofspikes_plant4_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/nos4_v2"
+                    android:layout_marginTop="14dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/nos4_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plant4_height_v2"
+                    android:layout_marginTop="14dp"
+                    android:text="No. of Spikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/length_spikes_plant4_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/lospikes4_v2"
+                    android:layout_marginTop="11dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/RelLay_plant5_v2"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/plant10_button_v2"
+                android:layout_marginTop="14dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/lospikes5_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/noofspikes_plant5_v2"
+                    android:layout_marginTop="13dp"
+                    android:text="LengthofSpikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/grainsperspike_plant5_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignBaseline="@+id/noofspikes_plant5_v2"
+                    android:layout_alignBottom="@+id/noofspikes_plant5_v2"
+                    android:layout_alignLeft="@+id/noofbranches_plant5_v2"
+                    android:layout_alignStart="@+id/noofbranches_plant5_v2"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/grainsps5_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/nos5_v2"
+                    android:layout_alignBottom="@+id/nos5_v2"
+                    android:layout_alignEnd="@+id/branches5_v2"
+                    android:layout_alignRight="@+id/branches5_v2"
+                    android:text="Grains per Spike"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/noofbranches_plant5_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignBaseline="@+id/plant5_height_v2"
+                    android:layout_alignBottom="@+id/plant5_height_v2"
+                    android:layout_alignLeft="@+id/branches5_v2"
+                    android:layout_alignStart="@+id/branches5_v2"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/plant5_height_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plantheight5_v2"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/branches5_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="45dp"
+                    android:layout_marginRight="45dp"
+                    android:text="No. of Tillers"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/plantheight5_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plant Height"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/noofspikes_plant5_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/nos5_v2"
+                    android:layout_marginTop="14dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/nos5_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plant5_height_v2"
+                    android:layout_marginTop="14dp"
+                    android:text="No. of Spikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/length_spikes_plant5_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/lospikes5_v2"
+                    android:layout_marginTop="11dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/RelLay_plant6_v2"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/plant10_button_v2"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/lospikes6_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/noofspikes_plant6_v2"
+                    android:layout_marginTop="13dp"
+                    android:text="LengthofSpikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/grainsperspike_plant6_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignBaseline="@+id/noofspikes_plant6_v2"
+                    android:layout_alignBottom="@+id/noofspikes_plant6_v2"
+                    android:layout_alignLeft="@+id/noofbranches_plant6_v2"
+                    android:layout_alignStart="@+id/noofbranches_plant6_v2"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/grainsps6_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/nos6_v2"
+                    android:layout_alignBottom="@+id/nos6_v2"
+                    android:layout_alignEnd="@+id/tillers6_v2"
+                    android:layout_alignRight="@+id/tillers6_v2"
+                    android:text="Grains per Spike"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/noofbranches_plant6_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignBaseline="@+id/plant6_height_v2"
+                    android:layout_alignBottom="@+id/plant6_height_v2"
+                    android:layout_alignLeft="@+id/tillers6_v2"
+                    android:layout_alignStart="@+id/tillers6_v2"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/plant6_height_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plantheight6_v2"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/tillers6_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="45dp"
+                    android:layout_marginRight="45dp"
+                    android:text="No. of Tillers"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/plantheight6_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plant Height"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/noofspikes_plant6_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/nos6_v2"
+                    android:layout_marginTop="14dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/nos6_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plant6_height_v2"
+                    android:layout_marginTop="14dp"
+                    android:text="No. of Spikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/length_spikes_plant6_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/lospikes6_v2"
+                    android:layout_marginTop="11dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelLay_plant7_v2"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/plant10_button_v2"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/lospikes7_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/noofspikes_plant7_v2"
+                    android:layout_marginTop="13dp"
+                    android:text="LengthofSpikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/grainsperspike_plant7_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignBaseline="@+id/noofspikes_plant7_v2"
+                    android:layout_alignBottom="@+id/noofspikes_plant7_v2"
+                    android:layout_alignLeft="@+id/noofbranches_plant7_v2"
+                    android:layout_alignStart="@+id/noofbranches_plant7_v2"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/grainsps7_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/nos7_v2"
+                    android:layout_alignBottom="@+id/nos7_v2"
+                    android:layout_alignEnd="@+id/branches7_v2"
+                    android:layout_alignRight="@+id/branches7_v2"
+                    android:text="Grains per Spike"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/noofbranches_plant7_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignBaseline="@+id/plant7_height_v2"
+                    android:layout_alignBottom="@+id/plant7_height_v2"
+                    android:layout_alignLeft="@+id/branches7_v2"
+                    android:layout_alignStart="@+id/branches7_v2"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/plant7_height_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plantheight7_v2"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/branches7_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="45dp"
+                    android:layout_marginRight="45dp"
+                    android:text="No. of Tillers"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/plantheight7_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plant Height"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/noofspikes_plant7_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/nos7_v2"
+                    android:layout_marginTop="14dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/nos7_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plant7_height_v2"
+                    android:layout_marginTop="14dp"
+                    android:text="No. of Spikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/length_spikes_plant7_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/lospikes7_v2"
+                    android:layout_marginTop="11dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelLay_plant8_v2"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/plant10_button_v2"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lospikes8_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/noofspikes_plant8_v2"
+                    android:layout_marginTop="13dp"
+                    android:text="LengthofSpikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/grainsperspike_plant8_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignBaseline="@+id/noofspikes_plant8_v2"
+                    android:layout_alignBottom="@+id/noofspikes_plant8_v2"
+                    android:layout_alignLeft="@+id/noofbranches_plant8_v2"
+                    android:layout_alignStart="@+id/noofbranches_plant8_v2"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/grainsps8_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/nos8_v2"
+                    android:layout_alignBottom="@+id/nos8_v2"
+                    android:layout_alignEnd="@+id/tillers8_v2"
+                    android:layout_alignRight="@+id/tillers8_v2"
+                    android:text="Grains per Spike"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/noofbranches_plant8_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignBaseline="@+id/plant8_height_v2"
+                    android:layout_alignBottom="@+id/plant8_height_v2"
+                    android:layout_alignLeft="@+id/tillers8_v2"
+                    android:layout_alignStart="@+id/tillers8_v2"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/plant8_height_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plantheight8_v2"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/tillers8_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="45dp"
+                    android:layout_marginRight="45dp"
+                    android:text="No. of Tillers"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/plantheight8_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plant Height"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/noofspikes_plant8_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/nos8_v2"
+                    android:layout_marginTop="14dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/nos8_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plant8_height_v2"
+                    android:layout_marginTop="14dp"
+                    android:text="No. of Spikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/length_spikes_plant8_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/lospikes8_v2"
+                    android:layout_marginTop="11dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelLay_plant9_v2"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_below="@+id/plant10_button_v2"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@+id/RelLay_plant2_v2"
+                android:layout_toRightOf="@+id/RelLay_plant2_v2"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/lospikes9_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/noofspikes_plant9_v2"
+                    android:layout_marginTop="13dp"
+                    android:text="LengthofSpikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/grainsperspike_plant9_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignBaseline="@+id/noofspikes_plant9_v2"
+                    android:layout_alignBottom="@+id/noofspikes_plant9_v2"
+                    android:layout_alignLeft="@+id/noofbranches_plant9_v2"
+                    android:layout_alignStart="@+id/noofbranches_plant9_v2"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/grainsps9_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/nos9_v2"
+                    android:layout_alignBottom="@+id/nos9_v2"
+                    android:layout_alignEnd="@+id/tillers9_v2"
+                    android:layout_alignRight="@+id/tillers9_v2"
+                    android:text="Grains per Spike"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/noofbranches_plant9_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignBaseline="@+id/plant9_height_v2"
+                    android:layout_alignBottom="@+id/plant9_height_v2"
+                    android:layout_alignLeft="@+id/tillers9_v2"
+                    android:layout_alignStart="@+id/tillers9_v2"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/plant9_height_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plantheight9_v2"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/tillers9_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="45dp"
+                    android:layout_marginRight="45dp"
+                    android:text="No. of Tillers"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/plantheight9_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plant Height"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/noofspikes_plant9_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/nos9_v2"
+                    android:layout_marginTop="14dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/nos9_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plant9_height_v2"
+                    android:layout_marginTop="14dp"
+                    android:text="No. of Spikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/length_spikes_plant9_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/lospikes9_v2"
+                    android:layout_marginTop="11dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/RelLay_plant10_v2"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_below="@+id/plant10_button_v2"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/RelLay_plant2_v2"
+                android:layout_toRightOf="@+id/RelLay_plant2_v2"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/lospikes10_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/noofspikes_plant10_v2"
+                    android:layout_marginTop="13dp"
+                    android:text="LengthofSpikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/grainsperspike_plant10_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignBaseline="@+id/noofspikes_plant10_v2"
+                    android:layout_alignBottom="@+id/noofspikes_plant10_v2"
+                    android:layout_alignLeft="@+id/noofbranches_plant10_v2"
+                    android:layout_alignStart="@+id/noofbranches_plant10_v2"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/grainsps10_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/nos10_v2"
+                    android:layout_alignBottom="@+id/nos10_v2"
+                    android:layout_alignEnd="@+id/tillers10_v2"
+                    android:layout_alignRight="@+id/tillers10_v2"
+                    android:text="Grains per Spike"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/noofbranches_plant10_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignBaseline="@+id/plant10_height_v2"
+                    android:layout_alignBottom="@+id/plant10_height_v2"
+                    android:layout_alignLeft="@+id/tillers10_v2"
+                    android:layout_alignStart="@+id/tillers10_v2"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/plant10_height_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plantheight10_v2"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/tillers10_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="45dp"
+                    android:layout_marginRight="45dp"
+                    android:text="No. of Tillers"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/plantheight10_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plant Height"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/noofspikes_plant10_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/nos10_v2"
+                    android:layout_marginTop="14dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/nos10_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/plant10_height_v2"
+                    android:layout_marginTop="14dp"
+                    android:text="No. of Spikes"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/length_spikes_plant10_v2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/lospikes10_v2"
+                    android:layout_marginTop="11dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/textView6_v2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/button11_v2"
+
+                android:layout_marginTop="15dp"
+                android:text="Performance"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView4_v2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="503dp"
+
+                android:text="Total Yield"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView7_v2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/Yield_v2"
+                android:layout_marginTop="22dp"
+                android:text="Is this variety suitable here?"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/Yield_v2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView4_v2"
+                android:layout_alignBottom="@+id/textView4_v2"
+                android:layout_marginLeft="26dp"
+                android:layout_marginStart="26dp"
+                android:layout_toEndOf="@+id/textView6_v2"
+                android:layout_toRightOf="@+id/textView6_v2"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/button11_v2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/textView4_v2"
+                android:layout_alignRight="@+id/textView4_v2"
+                android:layout_below="@+id/textView7_v2"
+                android:layout_marginTop="11dp"
+                android:text="YES" />
+
+            <Button
+                android:id="@+id/button12_v2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/button11_v2"
+                android:layout_toEndOf="@+id/textView6_v2"
+                android:layout_toRightOf="@+id/textView6_v2"
+                android:text="NO" />
+
+            <RadioGroup
+                android:id="@+id/performance_RG_v2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/button11_v2"
+                android:layout_alignStart="@+id/button11_v2"
+                android:layout_below="@+id/textView6_v2"
+                android:layout_marginTop="20dp">
+
+                <RadioButton
+                    android:id="@+id/bad_RB_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Bad" />
+
+                <RadioButton
+                    android:id="@+id/good_RB_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Good" />
+
+                <RadioButton
+                    android:id="@+id/verygood_RB_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Very Good" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/variety1_button_v2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/plant5_button_v2"
+                android:layout_alignStart="@+id/plant5_button_v2"
+                android:layout_below="@+id/performance_RG_v2"
+                android:layout_marginTop="20dp"
+                android:text="Variety 1" />
+
+            <Button
+                android:id="@+id/done_v2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/variety1_button_v2"
+                android:layout_alignBottom="@+id/variety1_button_v2"
+                android:layout_alignEnd="@+id/Yield_v2"
+                android:layout_alignRight="@+id/Yield_v2"
+                android:text="Done" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

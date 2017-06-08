@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.farm.sristi.ssis17.PostActivitySowing">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="700dp">
+
+        <RelativeLayout
+            android:id="@+id/secondVariety"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/date_of_sowing_seed1"
+            android:layout_marginTop="34dp"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/date_of_sowing_seed2"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/quantity_of_seed2"
+                android:layout_marginLeft="13dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="19dp"
+                android:background="@drawable/input_outline"
+                android:ems="10"
+                android:hint="Date of Sowing Variey 2"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/quantity_of_seed2"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/name_variety_2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/input_outline"
+                android:ems="10"
+                android:hint="Quantity of Seed Variety 2"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/name_variety_2"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_alignLeft="@+id/quantity_of_seed2"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/quantity_of_seed2"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/input_outline"
+                android:ems="10"
+                android:hint="Name of Variety 2"
+                android:inputType="textPersonName" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="46dp"
+            android:text="Number of Varieties \n on Field"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/detailTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView17"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="39dp"
+            android:text="Enter Details of top 2 Varities sowed"
+            android:textColor="#000"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/name_of_variety1"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@+id/textView17"
+            android:layout_alignStart="@+id/textView17"
+            android:layout_below="@+id/detailTextView"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/input_outline"
+            android:ems="10"
+            android:hint="Name of Variety 1*"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/quantity_of_seed1"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@+id/name_of_variety1"
+            android:layout_alignStart="@+id/name_of_variety1"
+            android:layout_below="@+id/name_of_variety1"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/input_outline"
+            android:ems="10"
+            android:hint="Quantity of Seed Variety 1"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/date_of_sowing_seed1"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@+id/quantity_of_seed1"
+            android:layout_alignStart="@+id/quantity_of_seed1"
+            android:layout_below="@+id/quantity_of_seed1"
+            android:layout_marginTop="37dp"
+            android:background="@drawable/input_outline"
+            android:ems="10"
+            android:hint="Date of Sowing Variety 1"
+            android:inputType="textPersonName" />
+
+        <ImageButton
+            android:id="@+id/imageSelect"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/secondVariety"
+            android:layout_marginTop="18dp"
+            android:adjustViewBounds="true"
+            android:background="#00ffffff"
+            android:scaleType="centerCrop"
+            android:src="@drawable/add_btn" />
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="#e1a500"
+            android:text="Submit Report"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/many"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/detailTextView"
+            android:layout_alignEnd="@+id/name_of_variety1"
+            android:layout_alignRight="@+id/name_of_variety1"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:text="More Than 1" />
+
+    </RelativeLayout>
+</ScrollView>

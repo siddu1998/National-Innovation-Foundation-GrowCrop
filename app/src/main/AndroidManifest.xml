@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.farm.sristi.ssis17">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/wheat"
+        android:label="GrowCrop"
+        android:roundIcon="@drawable/wheat"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SetupActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".DetailActivity" />
+        <activity android:name=".VarietyMainPage" />
+        <activity android:name=".MasterMainPage" />
+        <activity android:name=".PostActivity" />
+        <activity android:name=".PostActivityFlowering" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".HotelActivity" />
+        <activity android:name=".DetailActivityHotel" />
+        <activity android:name=".PostActivityHarvesting" />
+        <activity android:name=".PostActivityPest" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".PostActivitySowing"></activity>
+    </application>
+
+</manifest>

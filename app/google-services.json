@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "526961833825",
+    "firebase_url": "https://ssis17-28adb.firebaseio.com",
+    "project_id": "ssis17-28adb",
+    "storage_bucket": "ssis17-28adb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:526961833825:android:8a9c664d8b949a6d",
+        "android_client_info": {
+          "package_name": "com.farm.sristi.ssis17"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "526961833825-vu868epanbbrv1tipih1e9j1jt3ljm33.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.farm.sristi.ssis17",
+            "certificate_hash": "71d316fff86c949247bac3705ec212434f7933d1"
+          }
+        },
+        {
+          "client_id": "526961833825-7rnv4p22vvu7764trpm9thlblcke03s6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDpQmBxCA9mrKGe8i3JrfsL4s5KAqIdVQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "526961833825-7rnv4p22vvu7764trpm9thlblcke03s6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

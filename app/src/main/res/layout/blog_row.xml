@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e37969d4"
+    android:layout_margin="20dp"
+    app:cardBackgroundColor="?attr/colorPrimary"
+    app:cardElevation="22dp"
+    app:cardCornerRadius="24dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/top"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/post_title"
+            android:textColor="#fff"
+            android:text="Post Title Goes here"
+            android:padding="15dp"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+        <TextView
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Posted By:"
+            android:layout_marginLeft="14dp"
+            android:textSize="10dp"/>
+        <TextView
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="username"
+            android:id="@+id/post_username"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
