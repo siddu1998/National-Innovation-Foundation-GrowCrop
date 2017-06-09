@@ -23,7 +23,7 @@
             android:layout_alignBottom="@+id/percentgeField"
             android:layout_alignLeft="@+id/problemID_r1"
             android:layout_alignStart="@+id/problemID_r1"
-            android:text=" Percentage Flowering 1"
+            android:text=" Percentage Flowering 1\nफूल का प्रतिशत	"
             android:textColor="#000"
             android:textSize="18sp" />
 
@@ -50,7 +50,7 @@
             android:layout_alignParentStart="true"
             android:layout_below="@+id/percentageFloweringEdit2"
             android:padding="15dp"
-            android:text="Insect Occurence 1"
+            android:text="Insect Occurence 1\nकीट की घटना"
             android:textColor="#000"
             android:textSize="18dp"
             android:visibility="visible" />
@@ -126,7 +126,7 @@
             android:layout_alignParentStart="true"
             android:layout_marginLeft="18dp"
             android:layout_marginStart="18dp"
-            android:text="Intensity of Insect \nDamage 1"
+            android:text="Intensity of Insect \nDamage 1\nकीट क्षति की तीव्रता"
             android:textColor="#000"
             android:textSize="18sp" />
 
@@ -138,7 +138,7 @@
             android:layout_alignStart="@+id/insectText2"
             android:layout_below="@+id/insectOccurence2radioGroup"
             android:layout_marginTop="69dp"
-            android:text="Disease Ocuurence 1"
+            android:text="Disease Ocuurence 1 \n रोग की घटना"
             android:textColor="#000"
             android:textSize="18sp" />
 
@@ -177,7 +177,7 @@
             android:layout_alignStart="@+id/methodofprep_r1"
             android:layout_below="@+id/methodofprep_r1"
             android:layout_marginTop="32dp"
-            android:text="Intensity of Disease 1"
+            android:text="Intensity of Disease 1\n रोग"
             android:textColor="#000"
             android:textSize="18sp" />
 
@@ -235,7 +235,7 @@
             android:layout_alignStart="@+id/dosage_r1"
             android:layout_below="@+id/dosage_r1"
             android:layout_marginTop="19dp"
-            android:text="Drought"
+            android:text="Drought/દુકાળ अकाल"
             android:textColor="#000"
             android:textSize="18sp" />
 
@@ -245,7 +245,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/precautions_r1"
             android:layout_marginTop="19dp"
-            android:text="Weed Occurence"
+            android:text="Weed Occurence\nघास की घटना"
             android:textColor="#000"
             android:textSize="18sp" />
 
@@ -257,7 +257,7 @@
             android:layout_alignParentStart="true"
             android:layout_below="@+id/WeedRadioGroup"
             android:layout_marginTop="57dp"
-            android:text="Nutrient Deficiency"
+            android:text="Nutrient Deficiency\nपोषक तत्व की कमी"
             android:textColor="#000"
             android:textSize="18sp" />
 
@@ -269,7 +269,7 @@
             android:layout_alignStart="@+id/textView8"
             android:layout_below="@+id/textView8"
             android:layout_marginTop="29dp"
-            android:text="Lodging"
+            android:text="Lodging/वक्रता"
             android:textColor="#000"
             android:textSize="18sp" />
 
@@ -673,7 +673,7 @@
             android:layout_alignStart="@+id/textView14"
             android:layout_below="@+id/textView14"
             android:layout_marginTop="14dp"
-            android:text="OnSet of Flowering 1"
+            android:text="OnSet of Flowering 1 \n ફૂલો ની શરૂઆત  \nफूलों की शुरुआत"
             android:textColor="#000" />
 
         <RadioGroup
@@ -690,21 +690,21 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:checked="true"
-                android:text="Early" />
+                android:text="Early/जल्दी" />
 
             <RadioButton
                 android:id="@+id/radioButton16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Normal" />
+                android:text="Normal/प्रकृतिस्थ" />
 
             <RadioButton
                 android:id="@+id/radioButton15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Late" />
+                android:text="Late/देर से" />
         </RadioGroup>
 
         <TextView

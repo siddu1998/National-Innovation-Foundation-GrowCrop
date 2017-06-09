@@ -13,65 +13,64 @@
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New User"
-        android:textColor="#ff0000"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginRight="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="11dp"
         android:layout_marginEnd="18dp"
-        android:layout_marginBottom="11dp" />
+        android:layout_marginRight="18dp"
+        android:text="New User/નવા વપરાશકર્તા / नया उपयोगकर्ता"
+        android:textColor="#ff0000" />
 
 
     <Button
-        android:textColor="#fff"
         android:id="@+id/loginBtn"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/roundbutton"
-        android:text="Login"
-        android:layout_marginBottom="22dp"
         android:layout_above="@+id/forgotPassword"
-        android:layout_toLeftOf="@+id/newUser"
-        android:layout_toStartOf="@+id/newUser" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp"
+        android:background="@drawable/roundbutton"
+        android:text="Login લૉગ ઇન કરો  लॉग इन करें    "
+        android:textColor="#fff" />
 
     <EditText
         android:id="@+id/loginPasswordField"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/input_outline"
-        android:ems="10"
-        android:hint="Password"
-        android:padding="12dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/loginEmailField"
         android:layout_marginLeft="23dp"
         android:layout_marginStart="23dp"
-        android:layout_below="@+id/loginEmailField"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:background="@drawable/input_outline"
+        android:ems="10"
+        android:hint="Password/પાસવર્ડ /पासवर्ड"
+        android:padding="12dp" />
 
     <EditText
         android:id="@+id/loginEmailField"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/loginPasswordField"
+        android:layout_alignStart="@+id/loginPasswordField"
+        android:layout_centerVertical="true"
         android:background="@drawable/input_outline"
         android:ems="10"
-        android:hint="Email"
+        android:hint="Email/ઇમેઇલ/ईमेल"
         android:inputType="textEmailAddress"
-        android:padding="16dp"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/loginPasswordField"
-        android:layout_alignStart="@+id/loginPasswordField" />
+        android:padding="16dp" />
 
     <TextView
-        android:text="Forgot Password"
+        android:id="@+id/forgotPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/forgotPassword"
-        tools:text="Forgot Password?"
+        android:layout_above="@+id/newUser"
+        android:layout_centerHorizontal="true"
+        android:text="Forgot Password\લૉગ ઇન કરો\ लॉग इन करें    "
         android:textColor="#000"
         android:textSize="18dp"
-        android:layout_above="@+id/newUser"
-        android:layout_centerHorizontal="true" />
+        tools:text="Forgot Password?" />
 
     <ImageView
         android:id="@+id/imageView4"

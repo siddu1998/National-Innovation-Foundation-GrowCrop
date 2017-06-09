@@ -20,15 +20,14 @@
 
     <EditText
         android:id="@+id/titleField"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:background="@drawable/input_outline"
-        android:hint="Farmer Name"
+        android:hint="Farmer Name/તમારું નામ /आपका नाम"
         android:padding="15dp"
         android:singleLine="true"
         android:layout_below="@+id/imageSelect"
-        android:layout_alignLeft="@+id/descField"
-        android:layout_alignStart="@+id/descField" />
+        android:layout_centerHorizontal="true" />
 
     <EditText
         android:id="@+id/descField"
@@ -40,9 +39,11 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/input_outline"
         android:ems="10"
-        android:hint="Mobile Number"
+        android:hint="Mobile Number/મોબાઇલ નંબર /मोबाइल नंबर"
         android:inputType="textMultiLine"
-        android:padding="15dp" />
+        android:padding="15dp"
+        android:layout_alignLeft="@+id/titleField"
+        android:layout_alignStart="@+id/titleField" />
 
     <EditText
         android:id="@+id/dateField"
@@ -54,8 +55,10 @@
         android:layout_marginTop="15dp"
         android:background="@drawable/input_outline"
         android:ems="10"
-        android:hint="Date Of Transplantation"
-        android:padding="15dp" />
+        android:hint="Date Of Transplantation/બીજ 1 ની સંખ્યા /बीज 1 की मात्रा"
+        android:padding="15dp"
+        android:layout_alignRight="@+id/titleField"
+        android:layout_alignEnd="@+id/titleField" />
 
     <EditText
         android:id="@+id/landField"

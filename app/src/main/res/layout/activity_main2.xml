@@ -12,10 +12,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Tap and Hold To Record"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="28dp"
         android:layout_above="@+id/recordlabel"
-        android:layout_alignLeft="@+id/name"
-        android:layout_alignStart="@+id/name" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="81dp"
+        android:layout_marginStart="81dp" />
 
     <TextView
         android:id="@+id/recordlabel"
@@ -27,13 +29,12 @@
         android:text="Tap and Hold To record" />
 
     <EditText
-        android:hint="Farmer Name"
         android:id="@+id/name"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="89dp"
         android:ems="10"
+        android:hint="Farmer Name/ખેડૂતનું નામ / किसान का नाम"
         android:inputType="textPersonName" />
 </RelativeLayout>

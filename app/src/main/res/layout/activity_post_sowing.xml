@@ -95,7 +95,7 @@
             android:layout_marginTop="26dp"
             android:background="@drawable/input_outline"
             android:ems="10"
-            android:hint="Name of Variety 1*"
+            android:hint="Name of Variety 1*પાક 1 નું નામ/ फसल का नाम"
             android:inputType="textPersonName" />
 
         <EditText
@@ -108,7 +108,7 @@
             android:layout_marginTop="25dp"
             android:background="@drawable/input_outline"
             android:ems="10"
-            android:hint="Quantity of Seed Variety 1"
+            android:hint="Quantity of Variety 1/બીજ 1 ની સંખ્યા  बीज 1 की मात्रा"
             android:inputType="textPersonName" />
 
         <EditText
@@ -121,8 +121,10 @@
             android:layout_marginTop="37dp"
             android:background="@drawable/input_outline"
             android:ems="10"
-            android:hint="Date of Sowing Variety 1"
-            android:inputType="textPersonName" />
+            android:hint="Date of Sowing Variety 1/વાવેતર 1 ની તારીખ  /बुवाई की तारीख"
+            android:inputType="textPersonName"
+            android:layout_alignRight="@+id/quantity_of_seed1"
+            android:layout_alignEnd="@+id/quantity_of_seed1" />
 
         <ImageButton
             android:id="@+id/imageSelect"
@@ -144,7 +146,7 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:background="#e1a500"
-            android:text="Submit Report"
+            android:text="Submit Report/રિપોર્ટ સબમિટ કરો /िपोर्ट सबमिट करें"
             android:textColor="@android:color/white"
             android:textSize="15sp" />
 

@@ -82,7 +82,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignStart="@+id/Nursing_CB_r1"
                 android:layout_marginTop="14dp"
-                android:text="Crop Name"
+                android:text="Crop Name/1 નું નામ /फसल का नाम"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="20dp" />
 
@@ -116,7 +116,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:checked="true"
-                    android:text="Insect-Pest"
+                    android:text="Insect-Pest/किट"
                     android:textSize="16dp" />
 
                 <RadioButton
@@ -124,7 +124,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Disease"
+                    android:text="Disease/ रोग"
                     android:textSize="16dp" />
 
                 <RadioButton
@@ -132,7 +132,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Nutrient Deficieny"
+                    android:text="Nutrient Deficieny/पोषक तत्वों का कम"
                     android:textSize="16dp" />
             </RadioGroup>
 
@@ -144,7 +144,7 @@
                 android:layout_alignStart="@+id/textView"
                 android:layout_below="@+id/Symptoms"
                 android:layout_marginTop="163dp"
-                android:text="Name of the Pest"
+                android:text="Name of the Pest/कीट  का नाम"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="20dp"
                 android:visibility="visible" />
@@ -243,21 +243,21 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:checked="true"
-                    android:text="Not Severe" />
+                    android:text="Not Severe/कम" />
 
                 <RadioButton
                     android:id="@+id/RB2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Severe" />
+                    android:text="Severe/ मध्यम" />
 
                 <RadioButton
                     android:id="@+id/RB3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Very Severe" />
+                    android:text="Very Severe/उच्च" />
             </RadioGroup>
 
             <TextView
@@ -268,7 +268,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/textView7"
                 android:layout_marginTop="65dp"
-                android:text="SOLUTION EMPLOYED"
+                android:text="SOLUTION EMPLOYED/ वर्तमान  उपाय"
                 android:textColor="#FFFF4444"
                 android:textSize="20dp"
                 android:visibility="visible" />
@@ -281,7 +281,7 @@
                 android:layout_alignStart="@+id/SourceofSolution"
                 android:layout_below="@+id/Solution"
                 android:layout_marginTop="24dp"
-                android:text="Name of the material"
+                android:text="Name of the material/ सामग्री"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="20dp"
                 android:visibility="visible" />
@@ -305,7 +305,7 @@
                 android:layout_alignLeft="@+id/PhonologicalState"
                 android:layout_alignStart="@+id/PhonologicalState"
                 android:layout_below="@+id/nameofmaterial_edit_r1"
-                android:text="Source of the material"
+                android:text="Source of the material/स्रोत"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="20dp"
                 android:visibility="visible" />
@@ -330,7 +330,7 @@
                 android:layout_alignStart="@+id/textView4"
                 android:layout_below="@+id/sourceofmaterial_edit_r1"
                 android:layout_marginTop="32dp"
-                android:text="Stage of the plant used"
+                android:text="Stage of the plant used/ मंच"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="20dp"
                 android:visibility="visible" />
@@ -354,7 +354,7 @@
                 android:layout_alignStart="@+id/textView6"
                 android:layout_below="@+id/stageofplant_edit_r1"
                 android:layout_marginTop="13dp"
-                android:text="Method of Preparation"
+                android:text="Method of Preparation/ बनाने की विधि"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="20dp"
                 android:visibility="visible" />
@@ -378,7 +378,7 @@
                 android:layout_alignRight="@+id/textView3"
                 android:layout_below="@+id/methodofprep_edit_r1"
                 android:layout_marginTop="16dp"
-                android:text="Method of Application"
+                android:text="Method of Application/ आवेदन की विधि"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="20dp"
                 android:visibility="visible" />
@@ -462,7 +462,7 @@
                 android:layout_alignStart="@+id/Local"
                 android:layout_below="@+id/textView"
                 android:layout_marginTop="13dp"
-                android:text="Nursing" />
+                android:text="Nursing/नर्सिंग" />
 
             <CheckBox
                 android:id="@+id/Vegetative_CB_r1"
@@ -472,7 +472,7 @@
                 android:layout_alignStart="@+id/Nursing_CB_r1"
                 android:layout_below="@+id/Nursing_CB_r1"
                 android:layout_marginTop="12dp"
-                android:text="Vegetative Growth" />
+                android:text="Vegetative Growth/वनस्पति विकास" />
 
             <CheckBox
                 android:id="@+id/Flower_CB_r1"
@@ -482,7 +482,7 @@
                 android:layout_alignStart="@+id/Vegetative_CB_r1"
                 android:layout_below="@+id/Vegetative_CB_r1"
                 android:layout_marginTop="13dp"
-                android:text="Flower Initiation" />
+                android:text="Flower Initiation/फूल दीक्षा" />
 
             <CheckBox
                 android:id="@+id/Fruiting_CB_r1"
@@ -492,7 +492,7 @@
                 android:layout_alignStart="@+id/radioGroup_extent_r1"
                 android:layout_below="@+id/Flower_CB_r1"
                 android:layout_marginTop="12dp"
-                android:text="Fruiting" />
+                android:text="Fruiting/फलने" />
 
             <CheckBox
                 android:id="@+id/maturity_CB_r1"
@@ -502,7 +502,7 @@
                 android:layout_alignStart="@+id/Fruiting_CB_r1"
                 android:layout_below="@+id/Fruiting_CB_r1"
                 android:layout_marginTop="13dp"
-                android:text="Maturity/Harvesting" />
+                android:text="Maturity/Harvesting/ कटाई" />
 
             <TextView
                 android:id="@+id/textView7"

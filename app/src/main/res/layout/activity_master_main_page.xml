@@ -12,15 +12,15 @@
         android:id="@+id/fieldVariety"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
         android:background="@drawable/roundbutton"
-        android:text="Crop Trail Data"
+        android:text="Crop Trial Data/પાક ટ્રાયલ ડેટા /फसल परीक्षण डेटा"
         android:textAllCaps="false"
         android:textColor="#fff"
-        android:textSize="20dp"
+        android:textSize="16dp"
         android:layout_alignParentTop="true"
         android:layout_alignLeft="@+id/pest"
-        android:layout_alignStart="@+id/pest"
-        android:layout_marginTop="35dp" />
+        android:layout_alignStart="@+id/pest" />
 
     <Button
         android:id="@+id/pest"
@@ -30,26 +30,26 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:background="@drawable/roundbutton"
-        android:text="Pest Control"
+        android:text="Pest Control/ઉપદ્રવી જીવાત નિયંત્રણ /किट – नियत्रण"
 
         android:textAllCaps="false"
         android:textColor="#fff"
-        android:textSize="20dp" />
+        android:textSize="16dp" />
 
     <Button
         android:id="@+id/record"
         android:layout_width="200dp"
 
-        android:textAllCaps="false"
-        android:textSize="20dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:textColor="#fff"
-        android:background="@drawable/roundbutton"
-        android:text="Kisan Ki Awaz"
-        android:layout_below="@+id/pest"
         android:layout_alignLeft="@+id/pest"
-        android:layout_alignStart="@+id/pest" />
+        android:layout_alignStart="@+id/pest"
+        android:layout_below="@+id/pest"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roundbutton"
+        android:text="Kisan Ki Awaz/કિસાન કી અવાઝ /किसान की आवाज़"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="16dp" />
 
     <ImageButton
         android:id="@+id/kissanHelpLine"
@@ -78,14 +78,14 @@
         android:id="@+id/solutions"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/record"
+        android:layout_alignStart="@+id/record"
+        android:layout_centerVertical="true"
         android:background="@drawable/roundbutton"
-        android:text="Solutions"
+        android:text="Solutions/ઉકેલ/उपाय"
         android:textAllCaps="false"
         android:textColor="#fff"
-        android:textSize="20dp"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/record"
-        android:layout_alignStart="@+id/record" />
+        android:textSize="16dp" />
 
     <ImageView
         android:id="@+id/ladyBug"
@@ -115,15 +115,15 @@
         android:layout_alignStart="@+id/imageView2" />
 
     <Button
-        android:textSize="20dp"
-        android:textAllCaps="false"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/solutions"
         android:layout_alignStart="@+id/solutions"
         android:layout_alignTop="@+id/kissanHelpLine"
         android:background="@drawable/roundbutton"
-        android:text="Kisan Help Line"
-        android:textColor="#fff" />
+        android:text="Kisan Help Line/ખેડૂત હેલ્પલાઇન /किसान हेल्पलाइन"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="16dp" />
 
 </RelativeLayout>

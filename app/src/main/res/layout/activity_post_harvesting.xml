@@ -13,7 +13,10 @@
             android:id="@+id/RelLay1"
             android:layout_width="match_parent"
             android:layout_height="2000dp"
-            android:visibility="visible">
+            android:visibility="visible"
+            android:layout_below="@+id/RelLay2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
 
 
             <TextView
@@ -130,9 +133,9 @@
                 android:id="@+id/RelLay_plant1"
                 android:layout_width="match_parent"
                 android:layout_height="400dp"
+                android:layout_below="@+id/plant10_button"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/plant10_button">
+                android:layout_alignParentStart="true">
 
 
                 <EditText
@@ -202,7 +205,7 @@
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/noofspikes_plant1_v1"
                     android:layout_marginTop="13dp"
-                    android:text="Length of Spikes"
+                    android:text="Length of Spikes \nस्पाइक्स की लंबाई"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="20dp" />
 
@@ -214,7 +217,7 @@
                     android:layout_alignBottom="@+id/noofspikes"
                     android:layout_alignEnd="@+id/nooftillers"
                     android:layout_alignRight="@+id/nooftillers"
-                    android:text="Grains per Spike"
+                    android:text="Grains per Spike \nप्रति स्पाइक अनाज"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="20dp" />
 
@@ -226,7 +229,7 @@
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/plant1_height_v1"
                     android:layout_marginTop="10dp"
-                    android:text="No. of Spikes"
+                    android:text="No. of Spikes \nस्पाइक्स"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="20dp" />
 
@@ -240,7 +243,7 @@
                     android:layout_marginStart="37dp"
                     android:layout_toEndOf="@+id/lengthofspikesedit"
                     android:layout_toRightOf="@+id/lengthofspikesedit"
-                    android:text="No. of Tillers"
+                    android:text="No. of Tillers \nसंख्या"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="20dp" />
 
@@ -252,7 +255,7 @@
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_marginTop="15dp"
-                    android:text="Plant Height"
+                    android:text="Plant Height\nऊंचाई"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="20dp" />
 
@@ -1404,39 +1407,35 @@
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="503dp"
 
                 android:text="Total Yield"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:layout_above="@+id/textView7"
+                android:layout_toRightOf="@+id/RelLay_plant2"
+                android:layout_toEndOf="@+id/RelLay_plant2" />
 
             <TextView
                 android:id="@+id/textView7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/Yield_v1"
-                android:layout_marginTop="22dp"
                 android:text="Is this variety suitable here?"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:layout_marginBottom="13dp"
+                android:layout_alignBottom="@+id/RelLay_plant1"
+                android:layout_alignLeft="@+id/yes_v1"
+                android:layout_alignStart="@+id/yes_v1" />
 
             <EditText
                 android:id="@+id/Yield_v1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/textView4"
-                android:layout_alignBottom="@+id/textView4"
-                android:layout_marginLeft="26dp"
-                android:layout_marginStart="26dp"
-                android:layout_toEndOf="@+id/textView6"
-                android:layout_toRightOf="@+id/textView6"
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:layout_alignBottom="@+id/textView4"
+                android:layout_alignLeft="@+id/no_v1"
+                android:layout_alignStart="@+id/no_v1" />
 
             <Button
                 android:id="@+id/yes_v1"
